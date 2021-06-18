@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { useAuthState } from 'react-firebase-hooks/auth'
+// importing a hook from a library that lets me check if user is logged in
+import Chat from './components/Chat';
+import SignIn from './components/SignIn';
+// imports componenets to seperate them into their own files, makes the code look cleaner
+import { auth } from './firebase';
+// importing auth variable from firebase.js
 
 function App() {
+  const [user] = useAuthState(auth)
+  // check if user is logged in or
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {user ? <Chat /> : <SignIn />}
+      {/* if user is logged in, show chat, other wise show sign in */}
+    </>
   );
 }
 
