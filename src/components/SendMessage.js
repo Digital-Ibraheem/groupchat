@@ -8,10 +8,10 @@ function SendMessage ({ scroll }) {
   const [msg, setMsg] = useState('')
   // set state to msg
 
-  async function sendMessage(e) {
+  async function sendMessage (e) {
     e.preventDefault()
     // preventDefault stops the browser from refreshing
-    const { uid, photoURL } = auth.currentUser;
+    const { uid, photoURL } = auth.currentUser
     // access the current users id and profile pic
     await db.collection('messages').add({
       // access the database, and the collection called messages inside of it and add the following as an object:
