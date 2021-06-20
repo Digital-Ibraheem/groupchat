@@ -36,7 +36,7 @@ p {
 
 .received {
   border: 1px solid lightgray;
-  background-color: #FAFAFA;
+  background-color: #fAfAfA;
   border-top-left-radius: 1000px;
   float: left;
 }
@@ -78,12 +78,15 @@ p {
   p {
     font-size: 20px;
   }
+
   .sent {
     padding: 10px 10px 0 10px;
   }
+
   .received {
     padding: 10px 10px 0 10px;
   }
+
   img {
     height: 35px;
     margin-top: -10px;
@@ -92,19 +95,21 @@ p {
 
 @media (max-width: 500px) {
   /* if the window is less than 500px, add these following styles */
+
   p {
     font-size: 15px;
   }
+
   .sent {
     padding: 7px 7px 0 7px;
   }
+
   .received {
     padding: 7px 7px 0 7px;
   }
+
   img {
     height: 30px;
     margin-top: -7px;
   }
 }
-
-
