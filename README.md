@@ -1,5 +1,6 @@
 # GroupChat
-
+https://groupchat-53a8a.web.app/
+![image](https://github.com/user-attachments/assets/6f5c95fb-afcd-40b4-8810-f9bf668f2e07)
 GroupChat is a full-stack chatting application built with React and Firebase, created as part of my grade 9 summative project. This app allows users to join group chats, send messages in real-time, and stay connected with friends and family.
 
 ## Table of Contents
